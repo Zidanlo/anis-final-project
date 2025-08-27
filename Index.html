@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>anis – HTML5 Final Project</title>
+  <meta name="description" content="A simple HTML5 page demonstrating core tags without CSS." />
+</head>
+<body>
+
+  <!-- Header & Navigation -->
+  <header>
+    <h1>anis – My HTML5 Page</h1>
+    <nav>
+      <a href="#about">About</a> |
+      <a href="#story">Story</a> |
+      <a href="#gallery">Image</a> |
+      <a href="#lists">Lists</a> |
+      <a href="#table">Table</a> |
+      <a href="#contact">Contact</a>
+    </nav>
+    <hr>
+  </header>
+
+  <main>
+    <!-- About section -->
+    <section id="about">
+      <h2>About this page</h2>
+      <p>
+        This page was created by <strong>anis</strong> as a peer-graded final project.
+        It uses <em>HTML5 only</em> with no CSS or JavaScript.
+      </p>
+      <p>
+        External reference: 
+        <a href="https://developer.mozilla.org/" target="_blank" rel="noopener">MDN Web Docs</a>.
+      </p>
+    </section>
+
+    <!-- Story as an article -->
+    <section id="story">
+      <h2>Short Story</h2>
+      <article>
+        <h3>The Morning Plan</h3>
+        <p>
+          I woke up early and wrote a <mark>simple plan</mark> for the day.
+          First, brew coffee; second, finish my <code>index.html</code>;
+          third, share it with my peers.
+        </p>
+        <p>
+          I learned that clear structure—headings, paragraphs, and links—makes
+          content easier to read for humans and machines.
+        </p>
+      </article>
+    </section>
+
+    <!-- Image with alt and caption -->
+    <section id="gallery">
+      <h2>Image</h2>
+      <figure>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Fronalpstock_big.jpg"
+             alt="A mountain landscape with a lake" width="600">
+        <figcaption>A public-domain landscape image (Wikimedia Commons).</figcaption>
+      </figure>
+    </section>
+
+    <!-- Lists -->
+    <section id="lists">
+      <h2>Lists</h2>
+      <h3>Unordered</h3>
+      <ul>
+        <li>Headings &amp; paragraphs</li>
+        <li>Links &amp; images</li>
+        <li>Lists &amp; tables</li>
+        <li>Forms &amp; semantic tags</li>
+      </ul>
+      <h3>Ordered</h3>
+      <ol>
+        <li>Create the page</li>
+        <li>Publish it</li>
+        <li>Submit the URL on Coursera</li>
+      </ol>
+    </section>
+
+    <!-- Table with caption, thead/tbody -->
+    <section id="table">
+      <h2>Simple Table</h2>
+      <table border="1">
+        <caption>Study Plan</caption>
+        <thead>
+          <tr>
+            <th scope="col">Day</th>
+            <th scope="col">Topic</th>
+            <th scope="col">Minutes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Mon</td><td>HTML Basics</td><td>45</td></tr>
+          <tr><td>Tue</td><td>Semantic Tags</td><td>30</td></tr>
+          <tr><td>Wed</td><td>Forms</td><td>30</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Form -->
+    <section id="contact">
+      <h2>Contact Form (Demo)</h2>
+      <form action="https://httpbin.org/get" method="get">
+        <fieldset>
+          <legend>Send me a note</legend>
+
+          <label for="name">Name:</label>
+          <input id="name" name="name" type="text" value="anis" required>
+
+          <br>
+
+          <label for="email">Email:</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required>
+
+          <br>
+
+          <label for="topic">Topic:</label>
+          <select id="topic" name="topic">
+            <option value="html">HTML</option>
+            <option value="accessibility">Accessibility</option>
+            <option value="other">Other</option>
+          </select>
+
+          <br>
+
+          <label for="message">Message:</label><br>
+          <textarea id="message" name="message" rows="4" cols="40"></textarea>
+
+          <br>
+
+          <label>
+            <input type="checkbox" name="subscribe" value="yes">
+            Subscribe to updates
+          </label>
+
+          <br>
+
+          <button type="submit">Send</button>
+        </fieldset>
+      </form>
+    </section>
+
+    <!-- Aside/quote -->
+    <aside>
+      <blockquote cite="https://developer.mozilla.org/">
+        “Write for humans first, machines second.”
+      </blockquote>
+    </aside>
+  </main>
+
+  <footer>
+    <hr>
+    <small>© <time datetime="2025">2025</time> anis — HTML5 only demo.</small>
+  </footer>
+
+</body>
+</html>
